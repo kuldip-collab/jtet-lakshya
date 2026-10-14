@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0a1236"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png"><meta name="mobile-web-app-capable" content="yes">
+<link rel="manifest" href="manifest.json?v=3"><meta name="theme-color" content="#0a1236"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png"><meta name="mobile-web-app-capable" content="yes">
 <title>लक्ष्य JTET 2026 – Mock Test, Practice Set & PYQ</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -602,7 +602,7 @@ const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.targ
 els.forEach(e=>io.observe(e))})();
 let dp=null;addEventListener('beforeinstallprompt',e=>{e.preventDefault();dp=e;$('ins').hidden=false});
 $('ins').onclick=async()=>{if(!dp)return;dp.prompt();await dp.userChoice;dp=null;$('ins').hidden=true};
-if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
+if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js?v=3').catch(()=>{}));
 </script>
 </body>
 </html>
